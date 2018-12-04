@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import PostListItem from './PostListItem/PostListItem';
 
 function PostList(props) {
+  {
+    console.log("generowanie listy postow")
   return (
     <div className="listView">
       {
@@ -20,6 +22,7 @@ function PostList(props) {
       }
     </div>
   );
+  }
 }
 
 PostList.propTypes = {

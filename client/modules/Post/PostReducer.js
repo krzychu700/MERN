@@ -24,7 +24,7 @@ const PostReducer = (state = initialState, action) => {
 
     case UPDATE_VOTES :
       { 
-      console.log(UPDATE_VOTES);
+      console.log("aktualizacja");
       return {
         data: state.data.map(post => { return post.cuid === action.cuid ? Object.assign({}, post, action.post) : post } ),
     }};

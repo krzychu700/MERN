@@ -67,6 +67,8 @@ export function updateVotes(cuid, post) {
 }
 
 export function updateVotesRequest(cuid, post) {
+  {
+    console.log("wywolanie funkcji aktualizujacej")
   return dispatch => {
     return callApi(`posts/${cuid}`, 'put', {
       post: {
@@ -74,6 +76,7 @@ export function updateVotesRequest(cuid, post) {
       },
     }).then(() => dispatch(updateVotes(cuid, post)));
   };
+}
 }
 
 export function fetchPosts() {

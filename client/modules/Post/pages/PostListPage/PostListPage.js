@@ -35,6 +35,8 @@ class PostListPage extends Component {
   };
 
   render() {
+    {
+      console.log("generowanie strony do wyswietlania postow")
     return (
       <div>
         <PostCreateWidget addPost={this.handleAddPost} showAddPost={this.props.showAddPost} />
@@ -42,6 +44,7 @@ class PostListPage extends Component {
       </div>
     );
   }
+}
 }
 
 // Actions required to provide data for this component to render in sever side.

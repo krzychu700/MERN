@@ -8,6 +8,8 @@ import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa';
 import styles from './PostListItem.css';
 
 function PostListItem(props) {
+  {
+    console.log("generowanie pojedynczego posta");
   return (
     <div className={styles['single-post']}>
       <h3 className={styles['post-title']}>
@@ -23,7 +25,8 @@ function PostListItem(props) {
       <p className={styles['vote-icon-down']}><FaThumbsDown onClick={props.onThumbDown} /></p>
       <hr className={styles.divider} />
     </div>
-  );
+  );  
+}
 }
 
 PostListItem.propTypes = {
